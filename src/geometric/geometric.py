@@ -1,3 +1,4 @@
+import math
 class Geometria:
     """
     Class with geometric exercises.
@@ -5,141 +6,50 @@ class Geometria:
     """
     
     def area_rectangulo(self, base, altura):
-        resultado
-        resultado= base*altura
+        resultado=base*altura
         return resultado
     
     def perimetro_rectangulo(self, base, altura):
-        """
-        Calcula el perímetro de un rectángulo.
-        
-        Args:
-            base (float): Longitud de la base del rectángulo
-            altura (float): Altura del rectángulo
-            
-        Returns:
-            float: Perímetro del rectángulo
-        """
-        pass
+        resultado=(base*2)+(altura*2)
+        return resultado
     
     def area_circulo(self, radio):
-        """
-        Calcula el área de un círculo.
-        
-        Args:
-            radio (float): Radio del círculo
-            
-        Returns:
-            float: Área del círculo
-        """
-        pass
+        resultado=math.pi*radio*radio
+        return resultado
     
     def perimetro_circulo(self, radio):
-        """
-        Calcula el perímetro (circunferencia) de un círculo.
-        
-        Args:
-            radio (float): Radio del círculo
-            
-        Returns:
-            float: Perímetro del círculo
-        """
-        pass
+        resultado=math.pi*(radio*2)
+        return resultado
     
     def area_triangulo(self, base, altura):
-        """
-        Calcula el área de un triángulo.
-        
-        Args:
-            base (float): Longitud de la base del triángulo
-            altura (float): Altura del triángulo
-            
-        Returns:
-            float: Área del triángulo
-        """
-        pass
+        resultado=(base*altura)/2
+        return resultado
     
     def perimetro_triangulo(self, lado1, lado2, lado3):
-        """
-        Calcula el perímetro de un triángulo.
-        
-        Args:
-            lado1 (float): Longitud del primer lado
-            lado2 (float): Longitud del segundo lado
-            lado3 (float): Longitud del tercer lado
-            
-        Returns:
-            float: Perímetro del triángulo
-        """
-        pass
+        resultado=lado1+lado2+lado3
+        return resultado
     
     def es_triangulo_valido(self, lado1, lado2, lado3):
-        """
-        Verifica si tres longitudes pueden formar un triángulo válido.
-        Un triángulo es válido si la suma de las longitudes de dos lados
-        es mayor que la longitud del tercer lado, para todos los lados.
-        
-        Args:
-            lado1 (float): Longitud del primer lado
-            lado2 (float): Longitud del segundo lado
-            lado3 (float): Longitud del tercer lado
-            
-        Returns:
-            bool: True si los lados pueden formar un triángulo, False en caso contrario
-        """
-        pass
+        if lado1+lado2>=lado3:
+            return True
+        else:
+            return False
     
     def area_trapecio(self, base_mayor, base_menor, altura):
-        """
-        Calcula el área de un trapecio.
-        
-        Args:
-            base_mayor (float): Longitud de la base mayor
-            base_menor (float): Longitud de la base menor
-            altura (float): Altura del trapecio
-            
-        Returns:
-            float: Área del trapecio
-        """
-        pass
+        resultado=(base_mayor+base_menor)*altura/2
+        return resultado
     
     def area_rombo(self, diagonal_mayor, diagonal_menor):
-        """
-        Calcula el área de un rombo usando sus diagonales.
-        
-        Args:
-            diagonal_mayor (float): Longitud de la diagonal mayor
-            diagonal_menor (float): Longitud de la diagonal menor
-            
-        Returns:
-            float: Área del rombo
-        """
-        pass
+        resultado=(diagonal_mayor*diagonal_menor)/2
+        return resultado
     
     def area_pentagono_regular(self, lado, apotema):
-        """
-        Calcula el área de un pentágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del pentágono
-            apotema (float): Longitud de la apotema (distancia del centro al punto medio de un lado)
-            
-        Returns:
-            float: Área del pentágono regular
-        """
-        pass
+        resultado=(lado*5)*apotema/2
+        return resultado
     
     def perimetro_pentagono_regular(self, lado):
-        """
-        Calcula el perímetro de un pentágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del pentágono
-            
-        Returns:
-            float: Perímetro del pentágono regular
-        """
-        pass
+        resultado=lado*5
+        return resultado
     
     def area_hexagono_regular(self, lado, apotema):
         """
