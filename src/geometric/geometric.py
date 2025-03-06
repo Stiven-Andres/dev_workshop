@@ -73,10 +73,13 @@ class Geometria:
         resultado= (4/3)*math.pi*(radio*radio*radio)
         return resultado
     pass
+
+
     def area_superficie_esfera(self, radio):
-        resultado= 4*math.pi(radio*radio)
+        resultado= 4*math.pi*(radio*radio)
         return resultado 
-    pass
+    
+
     def volumen_cilindro(self, radio, altura):
         resultado=math.pi*(radio*radio)*altura
         return resultado
