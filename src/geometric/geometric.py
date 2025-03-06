@@ -52,7 +52,9 @@ class Geometria:
         return resultado
     pass
     def area_hexagono_regular(self, lado, apotema):
-        resultado=6*(((lado*lado))/4)
+        resultado=((6*lado)*apotema)/2
+        return resultado
+        
     pass
     def perimetro_hexagono_regular(self, lado):
         resultado=lado*6
