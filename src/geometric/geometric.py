@@ -8,7 +8,7 @@ class Geometria:
     def area_rectangulo(self, base, altura):
         resultado=base*altura
         return resultado
-    pass
+    
     def perimetro_rectangulo(self, base, altura):
         resultado=(base*2)+(altura*2)
         return resultado
