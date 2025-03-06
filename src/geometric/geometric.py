@@ -66,6 +66,8 @@ class Geometria:
     pass
     def area_superficie_cubo(self, lado):
         resultado=(lado*lado)*6
+        return resultado
+    
     pass
     def volumen_esfera(self, radio):
         resultado= (4/3)*math.pi*(radio*radio*radio)
