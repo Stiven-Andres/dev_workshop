@@ -74,30 +74,12 @@ class Geometria:
         return resultado 
     
     def volumen_cilindro(self, radio, altura):
-        """
-        Calcula el volumen de un cilindro.
-        
-        Args:
-            radio (float): Radio de la base del cilindro
-            altura (float): Altura del cilindro
-            
-        Returns:
-            float: Volumen del cilindro
-        """
-        pass
+        resultado=math.pi*(radio*radio)*altura
+        return resultado
     
     def area_superficie_cilindro(self, radio, altura):
-        """
-        Calcula el área de la superficie de un cilindro.
-        
-        Args:
-            radio (float): Radio de la base del cilindro
-            altura (float): Altura del cilindro
-            
-        Returns:
-            float: Área de la superficie del cilindro
-        """
-        pass
+        resultado=(2*math.pi*radio*altura)+(2*math.pi*(radio*radio))
+        return resultado
     
     def distancia_entre_puntos(self, x1, y1, x2, y2):
         """
