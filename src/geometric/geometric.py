@@ -85,34 +85,15 @@ class Geometria:
         resultado=math.sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-xy)))
     
     def punto_medio(self, x1, y1, x2, y2):
-        """
-        Calcula el punto medio entre dos puntos en un plano 2D.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            tuple: Coordenadas (x, y) del punto medio
-        """
-        pass
+        resultado_x=(x1+x2)/2
+        resultado_y=(y1+y2)/2
+
+        resultado_gen=(resultado_x,resultado_y)
+        return resultado_gen
     
     def pendiente_recta(self, x1, y1, x2, y2):
-        """
-        Calcula la pendiente de una recta que pasa por dos puntos.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            float: Pendiente de la recta
-        """
-        pass
+        resultado=(y2-y1)/(x2-x1)
+        return resultado
     
     def ecuacion_recta(self, x1, y1, x2, y2):
         """
