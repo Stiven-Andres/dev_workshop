@@ -107,14 +107,6 @@ class Geometria:
         return resultado
     
     def perimetro_poligono_regular(self, num_lados, lado):
-        """
-        Calcula el perímetro de un polígono regular.
+        resultado=num_lados*lado
+        return resultado
         
-        Args:
-            num_lados (int): Número de lados del polígono
-            lado (float): Longitud de cada lado
-            
-        Returns:
-            float: Perímetro del polígono regular
-        """
-        pass
