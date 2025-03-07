@@ -89,7 +89,7 @@ class Geometria:
         return resultado
     
     def distancia_entre_puntos(self, x1, y1, x2, y2):
-        resultado=math.sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-xy)))
+        resultado=math.sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)))
         return resultado
     
     def punto_medio(self, x1, y1, x2, y2):
