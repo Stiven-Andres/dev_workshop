@@ -112,7 +112,7 @@ class Geometria:
     
     def area_poligono_regular(self, num_lados, lado, apotema):
         if num_lados==4:
-            resultado=lado*lado
+            resultado=lado **2
             return resultado
         else:
             resultado=((num_lados*lado)*apotema)/2
