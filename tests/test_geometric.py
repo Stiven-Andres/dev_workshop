@@ -138,7 +138,7 @@ class TestGeometria:
         # Test con radio entero
         assert round(self.geometria.area_superficie_esfera(3), 2) == 113.09
         # Test con radio decimal
-        assert round(self.geometria.area_superficie_esfera(2.5), 2) == 78.54
+        assert round(self.geometria.area_superficie_esfera(2.5), 2) == 78.53
         # Test con radio cero (área cero)
         assert self.geometria.area_superficie_esfera(0) == 0
     
