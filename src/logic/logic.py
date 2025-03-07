@@ -14,6 +14,7 @@ class Logica:
     def NOT(self, a):
         
         return not a
+        
     def XOR(self, a, b):
         """
         Implementa la operación lógica XOR (OR exclusivo).
