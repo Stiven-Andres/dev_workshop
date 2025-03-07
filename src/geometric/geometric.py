@@ -77,7 +77,7 @@ class Geometria:
 
     def area_superficie_esfera(self, radio):
         resultado= 4*math.pi*(radio*radio)
-        return resultado 
+        return round(resultado)
     
 
     def volumen_cilindro(self, radio, altura):
