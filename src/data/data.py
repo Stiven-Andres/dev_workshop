@@ -12,20 +12,20 @@ class Data:
 
     
     def buscar_elemento(self, lista, elemento):
-        for i in range(len(lista)):  # Recorremos la lista con su índice
-            if lista[i] == elemento:  # Si encontramos el elemento
-                return i  # Devolvemos su índice
-        return -1  # Si no lo encontramos, devolvemos -1
+        for i in range(len(lista)):  
+            if lista[i] == elemento:  
+                return i  
+        return -1  
     
 
     def eliminar_duplicados(self, lista):
         lista_sin_duplicados = []
-        elementos_vistos = []  # Usamos una lista en lugar de un diccionario
+        elementos_vistos = []
 
         for elemento in lista:
             if elemento not in elementos_vistos:
                 lista_sin_duplicados.append(elemento)
-                elementos_vistos.append(elemento)  # Guardamos el elemento sin importar su tipo
+                elementos_vistos.append(elemento)
 
         return lista_sin_duplicados
         
