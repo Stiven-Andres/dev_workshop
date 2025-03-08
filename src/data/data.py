@@ -17,19 +17,18 @@ class Data:
                 return i  # Devolvemos su índice
         return -1  # Si no lo encontramos, devolvemos -1
     
-    def eliminar_duplicados(self, lista):
-        """
-        Elimina elementos duplicados de una lista sin usar set().
-        Mantiene el orden original de aparición.
-        
-        Args:
-            lista (list): Lista con posibles duplicados
-            
-        Returns:
-            list: Lista sin elementos duplicados
-        """
-        pass
     
+    def eliminar_duplicados(self, lista):
+        lista_sin_duplicados = []  # Lista para almacenar los elementos únicos
+        elementos_vistos = {}  # Diccionario para registrar elementos ya añadidos
+        for elemento in lista:
+            if elemento not in elementos_vistos:  # Si el elemento no ha sido visto antes
+                lista_sin_duplicados.append(elemento)  # Lo agregamos a la nueva lista
+                elementos_vistos[elemento] = True  # Lo marcamos como visto
+
+        return lista_sin_duplicados
+    
+
     def merge_ordenado(self, lista1, lista2):
         """
         Combina dos listas ordenadas en una sola lista ordenada.
