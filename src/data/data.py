@@ -5,7 +5,6 @@ class Data:
     """
     
     def invertir_lista(self, lista):
-       def invertir_lista(self, lista):
         lista_invertida = []
         for i in range(len(lista) - 1, -1, -1):
             lista_invertida.append(lista[i])
