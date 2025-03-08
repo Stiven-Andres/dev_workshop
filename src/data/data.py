@@ -23,9 +23,9 @@ class Data:
         elementos_vistos = []
 
         for elemento in lista:
-            if elemento not in elementos_vistos:
+            if (elemento, type(elemento)) not in elementos_vistos:
                 lista_sin_duplicados.append(elemento)
-                elementos_vistos.append(elemento)
+                elementos_vistos.append((elemento, type(elemento))) 
 
         return lista_sin_duplicados
         
