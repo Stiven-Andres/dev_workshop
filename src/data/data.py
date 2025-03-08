@@ -17,17 +17,18 @@ class Data:
                 return i  # Devolvemos su índice
         return -1  # Si no lo encontramos, devolvemos -1
     
-    
+
     def eliminar_duplicados(self, lista):
-        lista_sin_duplicados = []  # Lista para almacenar los elementos únicos
-        elementos_vistos = {}  # Diccionario para registrar elementos ya añadidos
+        lista_sin_duplicados = []
+        elementos_vistos = []  # Usamos una lista en lugar de un diccionario
+
         for elemento in lista:
-            if elemento not in elementos_vistos:  # Si el elemento no ha sido visto antes
-                lista_sin_duplicados.append(elemento)  # Lo agregamos a la nueva lista
-                elementos_vistos[elemento] = True  # Lo marcamos como visto
+            if elemento not in elementos_vistos:
+                lista_sin_duplicados.append(elemento)
+                elementos_vistos.append(elemento)  # Guardamos el elemento sin importar su tipo
 
         return lista_sin_duplicados
-    
+        
 
     def merge_ordenado(self, lista1, lista2):
         """
