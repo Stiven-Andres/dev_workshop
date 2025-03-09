@@ -72,11 +72,11 @@ class Magic:
             fila_anterior = triangulo[-1]  # Última fila generada
             nueva_fila = [1]  # Comenzamos cada fila con 1
 
-        for j in range(1, len(fila_anterior)):
-            nueva_fila.append(fila_anterior[j - 1] + fila_anterior[j])  # Suma de elementos adyacentes
+            for j in range(1, len(fila_anterior)):
+                nueva_fila.append(fila_anterior[j - 1] + fila_anterior[j])  # Suma de elementos adyacentes
 
-        nueva_fila.append(1)  # Terminamos la fila con 1
-        triangulo.append(nueva_fila)
+            nueva_fila.append(1)  # Terminamos la fila con 1
+            triangulo.append(nueva_fila)
 
         return triangulo
     
