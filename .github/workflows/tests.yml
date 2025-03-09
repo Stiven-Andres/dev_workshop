@@ -31,14 +31,17 @@ jobs:
     - name: Generate coverage report
       run: |
         pytest --cov=src --cov-report=xml tests/
+
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v5
+      with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: Stiven-Andres/dev_workshop
     
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
         file: ./coverage.xml
         fail_ci_if_error: true
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v5
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        slug: Stiven-Andres/dev_workshop
+    
+  
