@@ -58,14 +58,12 @@ class Strings:
     
     def eliminar_espacios_duplicados(self, texto):
         
-        inicio = len(texto) - len(texto.lstrip())  # Cuenta los espacios al inicio
-        fin = len(texto) - len(texto.rstrip())  # Cuenta los espacios al final
-    
-        # Elimina espacios duplicados en el centro
-        texto_limpio = " ".join(texto.split())
+        inicio = " " if texto.startswith(" ") else ""  # Un solo espacio si hay espacios iniciales
+        fin = " " if texto.endswith(" ") else ""  # Un solo espacio si hay espacios finales
 
-        # Vuelve a añadir los espacios iniciales y finales
-        return " " * inicio + texto_limpio + " " * fin
+        texto_limpio = " ".join(texto.split())  # Elimina espacios extra entre palabras
+
+        return inicio + texto_limpio + fin
 
     
     def es_numero_entero(self, texto):
