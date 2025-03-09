@@ -33,16 +33,17 @@ class Magic:
         return fib
     
     def es_primo(self, n):
-        """
-        Verifica si un número es primo.
+        x = 1
+        contador = 0
+        while x<n:
+            if n % x ==0:
+                contador = contador + 1
         
-        Args:
-            n (int): Número a verificar
-            
-        Returns:
-            bool: True si n es primo, False en caso contrario
-        """
-        pass
+        if contador ==2:
+            return True
+        else:
+            return False
+        
     
     def generar_primos(self, n):
         """
