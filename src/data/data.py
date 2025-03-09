@@ -115,4 +115,7 @@ class Data:
     
     def matriz_transpuesta(self, matriz):
 
+        if not matriz or not matriz[0]:  # Verifica si la matriz está vacía o si tiene filas vacías
+            return []
+    
         return [[fila[i] for fila in matriz] for i in range(len(matriz[0]))]
