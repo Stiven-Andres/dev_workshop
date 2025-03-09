@@ -27,12 +27,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest --cov=src tests/
-
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v5
-      with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          slug: Stiven-Andres/dev_workshop
     
     - name: Generate coverage report
       run: |
