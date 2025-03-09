@@ -45,6 +45,7 @@ class Data:
         
         resultado.extend(lista1[i:])
         resultado.extend(lista2[j:])
+        return resultado
     
     def rotar_lista(self, lista, k):
         """
