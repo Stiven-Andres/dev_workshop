@@ -104,11 +104,15 @@ class Geometria:
         return resultado
     
     def ecuacion_recta(self, x1, y1, x2, y2):
-        A=y2-y1
-        B=x1-x2
-        C=(x2*y1)-(x1*y2)
-        resultado=(A,B,C)
-        return resultado
+        if x1 == x2 and y1 == y2:
+            raise ValueError("Los puntos no pueden ser iguales, no definen una recta.")
+    
+        else:
+            A = y2 - y1
+            B = x1 - x2
+            C = - (A * x1 + B * y1)
+
+            return A, B, C
     
     def area_poligono_regular(self, num_lados, lado, apotema):
         if num_lados==4:
