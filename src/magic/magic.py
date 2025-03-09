@@ -144,13 +144,5 @@ class Magic:
         pass
     
     def es_cuadrado_magico(self, matriz):
-        """
-        Verifica si una matriz es un cuadrado mágico (suma igual en filas, columnas y diagonales).
         
-        Args:
-            matriz (list): Lista de listas que representa una matriz cuadrada
-            
-        Returns:
-            bool: True si es un cuadrado mágico, False en caso contrario
-        """
         pass
