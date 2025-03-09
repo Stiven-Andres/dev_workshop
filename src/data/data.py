@@ -114,13 +114,5 @@ class Data:
         return {"enqueue": enqueue, "dequeue": dequeue, "peek": peek, "is_empty": is_empty}
     
     def matriz_transpuesta(self, matriz):
-        """
-        Calcula la transpuesta de una matriz.
-        
-        Args:
-            matriz (list): Lista de listas que representa una matriz
-            
-        Returns:
-            list: Matriz transpuesta
-        """
-        pass
+
+        return [[fila[i] for fila in matriz] for i in range(len(matriz[0]))]
