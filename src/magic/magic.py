@@ -91,17 +91,11 @@ class Magic:
         return resultado
     
     def mcd(self, a, b):
-        """
-        Calcula el máximo común divisor de dos números.
-        
-        Args:
-            a (int): Primer número
-            b (int): Segundo número
-            
-        Returns:
-            int: El máximo común divisor de a y b
-        """
-        pass
+
+        while b != 0:
+            a, b = b, a % b  # Reemplazamos a con b y b con el residuo de a % b
+    
+        return abs(a)
     
     def mcm(self, a, b):
         """
