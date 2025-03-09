@@ -35,9 +35,10 @@ class Magic:
     def es_primo(self, n):
         x = 1
         contador = 0
-        while x<n:
+        while x<=n:
             if n % x ==0:
                 contador = contador + 1
+        x=x+1
         
         if contador ==2:
             return True
