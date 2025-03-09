@@ -38,8 +38,8 @@ class Magic:
         while x<=n:
             if n % x ==0:
                 contador = contador + 1
-        x=x+1
-        
+            x=x+1
+
         if contador ==2:
             return True
         else:
