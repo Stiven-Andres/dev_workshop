@@ -17,16 +17,16 @@ class Strings:
 
     
     def contar_vocales(self, texto):
-        """
-        Cuenta el número de vocales en una cadena.
-        
-        Args:
-            texto (str): Cadena para contar vocales
-            
-        Returns:
-            int: Número de vocales en la cadena
-        """
-        pass
+
+        vocales = "aeiouAEIOU"  # Definimos las vocales (incluyendo mayúsculas)
+        contador = 0  # Inicializamos el contador en 0
+    
+        for caracter in texto:  # Recorremos la cadena
+            if caracter in vocales:  # Verificamos si el carácter es una vocal
+                contador += 1  # Incrementamos el contador
+
+        return contador
+
     
     def contar_consonantes(self, texto):
         """
