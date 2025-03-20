@@ -14,7 +14,7 @@ class Magic:
             return 1
 
         a, b = 0, 1  # Inicializamos los dos primeros números de Fibonacci
-        for _ in range(2, n + 1):
+        for i in range(2, n + 1):
             a, b = b, a + b  # Se actualizan los valores
         
         return b
