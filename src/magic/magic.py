@@ -125,23 +125,23 @@ class Magic:
     # Calculamos la suma de la primera fila como referencia
         suma_objetivo = sum(matriz[0])
 
-    # Verificamos la suma de todas las filas
+    
         for fila in matriz:
             if sum(fila) != suma_objetivo:
                 return False
 
-    # Verificamos la suma de todas las columnas
+    
         for j in range(n):
             if sum(matriz[i][j] for i in range(n)) != suma_objetivo:
                 return False
 
-    # Verificamos la suma de la diagonal principal
+    
         if sum(matriz[i][i] for i in range(n)) != suma_objetivo:
             return False
 
-        # Verificamos la suma de la diagonal secundaria
+        
         if sum(matriz[i][n - 1 - i] for i in range(n)) != suma_objetivo:
             return False
 
-        return True  # Si pasa todas las verificaciones, es un cuadrado mág
+        return True  
             
